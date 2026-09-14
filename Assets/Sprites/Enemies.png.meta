@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: 88702b4db0e96524a9473c5c44f5ef98
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1894608780280185185
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_0
+  - first:
+      213: -5783493269091137182
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_1
+  - first:
+      213: 4067961744325147190
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_2
+  - first:
+      213: 5430129218648887831
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_3
+  - first:
+      213: 1385158433232548241
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_4
+  - first:
+      213: -3257084574267509748
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_5
+  - first:
+      213: -3378783614241455875
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_6
+  - first:
+      213: -8071579591331328078
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_7
+  - first:
+      213: 83599952391255026
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_8
+  - first:
+      213: 2192876042828363101
+    second: ChatGPT Image Sep 12, 2026, 03_22_29 PM_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Enemy1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 467
+        width: 279
+        height: 395
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161cfe8c5a00b4a10800000000000000
+      internalID: 1894608780280185185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy2
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 494
+        width: 387
+        height: 426
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 269c5f69387ecbfa0800000000000000
+      internalID: -5783493269091137182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy4
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 527
+        width: 309
+        height: 433
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712590a11c1bb5b40800000000000000
+      internalID: 5430129218648887831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy3
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 527
+        width: 362
+        height: 362
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19176729142193310800000000000000
+      internalID: 1385158433232548241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 449
+        height: 355
+      alignment: 9
+      pivot: {x: 0.4950578, y: 0.43590608}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04716326d28cc2d0800000000000000
+      internalID: -3257084574267509748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy6
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 65
+        width: 292
+        height: 369
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df04a3454362c11d0800000000000000
+      internalID: -3378783614241455875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy7
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 25
+        width: 300
+        height: 486
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf4762702dfbff80800000000000000
+      internalID: -8071579591331328078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy8
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 54
+        width: 339
+        height: 424
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f33589b6b1092100800000000000000
+      internalID: 83599952391255026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 92b1af0c00c1e8041932728a6cb413cf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ChatGPT Image Sep 12, 2026, 03_22_29 PM_2: 4067961744325147190
+      ChatGPT Image Sep 12, 2026, 03_22_29 PM_9: 2192876042828363101
+      Enemy1: 1894608780280185185
+      Enemy2: -5783493269091137182
+      Enemy3: 1385158433232548241
+      Enemy4: 5430129218648887831
+      Enemy5: -3257084574267509748
+      Enemy6: -3378783614241455875
+      Enemy7: -8071579591331328078
+      Enemy8: 83599952391255026
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

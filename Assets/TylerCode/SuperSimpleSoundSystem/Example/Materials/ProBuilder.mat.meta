@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bf4953631cc41eb46929fe9eafdf9d5a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224878
+  packageName: Super Simple Sound System (S4)
+  packageVersion: 5.1.0
+  assetPath: Assets/TylerCode/SuperSimpleSoundSystem/Example/Materials/ProBuilder.mat
+  uploadId: 581499

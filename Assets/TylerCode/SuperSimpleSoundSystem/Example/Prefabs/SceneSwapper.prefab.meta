@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c64d643a47ee0ba4094b76e77c6ece3f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224878
+  packageName: Super Simple Sound System (S4)
+  packageVersion: 5.1.0
+  assetPath: Assets/TylerCode/SuperSimpleSoundSystem/Example/Prefabs/SceneSwapper.prefab
+  uploadId: 581499

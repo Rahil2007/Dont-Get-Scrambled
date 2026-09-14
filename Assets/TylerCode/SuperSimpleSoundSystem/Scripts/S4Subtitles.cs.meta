@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 33cff9c4c1a784947a5ec67f7a47f0c5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224878
+  packageName: Super Simple Sound System (S4)
+  packageVersion: 5.1.0
+  assetPath: Assets/TylerCode/SuperSimpleSoundSystem/Scripts/S4Subtitles.cs
+  uploadId: 581499

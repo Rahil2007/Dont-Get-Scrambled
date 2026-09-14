@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 955ac8505708c9a45b1e7cca835551e2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224878
+  packageName: Super Simple Sound System (S4)
+  packageVersion: 5.1.0
+  assetPath: Assets/TylerCode/SuperSimpleSoundSystem/Example/Prefabs/InstructionText.prefab
+  uploadId: 581499

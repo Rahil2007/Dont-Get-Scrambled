@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8c4e0a6701d94b840a7ff5758fb1e7e7
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224878
+  packageName: Super Simple Sound System (S4)
+  packageVersion: 5.1.0
+  assetPath: Assets/TylerCode/SuperSimpleSoundSystem/Example/Sounds/credits.txt
+  uploadId: 581499

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8f8fbf42ec9fb8641aecc0e530c344ba
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224878
+  packageName: Super Simple Sound System (S4)
+  packageVersion: 5.1.0
+  assetPath: Assets/TylerCode/SuperSimpleSoundSystem/Prefabs/SoundManager.prefab
+  uploadId: 581499

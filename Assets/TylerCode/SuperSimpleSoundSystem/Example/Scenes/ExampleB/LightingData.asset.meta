@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: dac97b680aa85824d89c4d04e99c0247
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 112000000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 224878
+  packageName: Super Simple Sound System (S4)
+  packageVersion: 5.1.0
+  assetPath: Assets/TylerCode/SuperSimpleSoundSystem/Example/Scenes/ExampleB/LightingData.asset
+  uploadId: 581499

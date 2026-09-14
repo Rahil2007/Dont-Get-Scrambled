@@ -1,0 +1,4 @@
+repository "GameDevGuildApp/GameDevGuildApp@13469275865126@cloud"
+  path "/"
+    br "/main"
+    co "/main"
