@@ -9,6 +9,7 @@ TagManager:
   - FxTemporaire
   - SoundManager
   - Bullet
+  - DeathZone
   layers:
   - Default
   - TransparentFX

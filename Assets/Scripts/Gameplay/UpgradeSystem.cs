@@ -37,9 +37,9 @@ public class UpgradeSystem : MonoBehaviour
         if (playerStats != null && moneyManager.Money >= cost * costMultiplier[0])
         {
             playerStats.SetMaxHealth(healthUpgrade);
-            moneyManager.SpendMoney(cost);
+            moneyManager.SpendMoney((int)(cost * costMultiplier[0]));
             costMultiplier[0] += 0.45f;
-            costText[0].SetText($"${cost * costMultiplier[0]:0}");
+            costText[0].SetText($"${(int)(cost * costMultiplier[0]):0}");
             moneyManager.UpdateMoneyText();
         } 
     }
@@ -49,9 +49,9 @@ public class UpgradeSystem : MonoBehaviour
         if (playerStats != null && moneyManager.Money >= cost * costMultiplier[1])
         {
             playerStats.SetFireRateMultiplier(fireRateUpgrade);
-            moneyManager.SpendMoney(cost);
+            moneyManager.SpendMoney((int)(cost * costMultiplier[1]));
             costMultiplier[1] += 0.3f;
-            costText[1].SetText($"${cost * costMultiplier[1]:0}");
+            costText[1].SetText($"${(int)(cost * costMultiplier[1]):0}");
             moneyManager.UpdateMoneyText();
         }
     }
@@ -61,9 +61,9 @@ public class UpgradeSystem : MonoBehaviour
         if (playerStats != null && moneyManager.Money >= cost * costMultiplier[2])
         {
             playerStats.SetDamageMultiplier(damageUpgrade);
-            moneyManager.SpendMoney(cost);
+            moneyManager.SpendMoney((int)(cost * costMultiplier[2]));
             costMultiplier[2] += 0.5f;
-            costText[2].SetText($"${cost * costMultiplier[2]:0}");
+            costText[2].SetText($"${(int)(cost * costMultiplier[2]):0}");
             moneyManager.UpdateMoneyText();
         }
     }
@@ -73,9 +73,9 @@ public class UpgradeSystem : MonoBehaviour
         if (playerStats != null && moneyManager.Money >= cost * costMultiplier[3])
         {
             playerStats.SetMaxInvincibility(invincibilityUpgrade);
-            moneyManager.SpendMoney(cost);
+            moneyManager.SpendMoney((int)(cost * costMultiplier[3]));
             costMultiplier[3] += 0.55f;
-            costText[3].SetText($"${cost * costMultiplier[3]:0}");
+            costText[3].SetText($"${(int)(cost * costMultiplier[3]):0}");
             moneyManager.UpdateMoneyText();
         }
     }

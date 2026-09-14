@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class UIHandler : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class UIHandler : MonoBehaviour
     [SerializeField] GameObject startScreen;
     [SerializeField] GameObject HUD;
     [SerializeField] GameObject obstacles;
+    [SerializeField] Button startButton;
 
     [Header("GameOverScreen")]
     [SerializeField] GameObject gameOverScreen;
@@ -115,6 +117,7 @@ public class UIHandler : MonoBehaviour
 
     public void StartGame()
     {
+        startButton.interactable = false;
         startScreen.GetComponent<Animator>().SetTrigger("Fade");
         obstacles.SetActive(true);
         HUD.SetActive(true);

@@ -92,6 +92,12 @@ public class Health : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("DeathZone"))
+            OnDeath?.Invoke();
+    }
+
     public void SetInvincibility(bool value)
     {
         isInvincible = value;
