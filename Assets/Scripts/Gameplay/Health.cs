@@ -38,6 +38,7 @@ public class Health : MonoBehaviour
 
     void Update()
     {
+        //Health regeneration logic
         if (canRegen && currentHealth < maxHealth && currentRegenTimer <= 0f && startRegen)
         {
             currentHealth = Mathf.Min(maxHealth, Mathf.MoveTowards(currentHealth, maxHealth, regenRate * Time.deltaTime));
@@ -64,6 +65,7 @@ public class Health : MonoBehaviour
     }
     public void TakeDamage(float damage)
     {
+        //Damage Logic idk has some events or smthg
         if (isInvincible && maxInvincibilityDuration > 0f)
             return;
         currentInvincibilityDuration = maxInvincibilityDuration;
@@ -98,6 +100,7 @@ public class Health : MonoBehaviour
             OnDeath?.Invoke();
     }
 
+    //Updating stuff
     public void SetInvincibility(bool value)
     {
         isInvincible = value;

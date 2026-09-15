@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
     private SmoothShakeFree.SmoothShake smoothShake;
     void Awake()
     {
+        //Getting components and subscribing to events
         smoothShake = FindAnyObjectByType<SmoothShakeFree.SmoothShake>();
         healthScript = GetComponent<Health>();
         playerStats = GetComponent<PlayerStats>();
@@ -66,6 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        //Input
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetKeyDown(KeyCode.Space))
@@ -100,6 +102,7 @@ public class PlayerMovement : MonoBehaviour
     }
     void Movement()
     {
+        //Calculating target speed for air and ground movement
         float targetSpeed;
         if (!isGrounded() && rb.linearVelocityY < 0f)
             targetSpeed = horizontal * maxAirSpeed;
@@ -107,6 +110,8 @@ public class PlayerMovement : MonoBehaviour
             targetSpeed = horizontal * maxGroundSpeed;
 
         //float rate = (Mathf.Abs(targetSpeed) > 0.01f) ? acceleration : deceleration;
+
+        //Allowing faster deceleration when changing direction
         float rate;
         if (targetSpeed > 0.01f && horizontal < -0.01f)
             rate = turnMult * deceleration;
@@ -144,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
     
     void VariableGravity()
     {
+        //Adjust gravity scaled based on different player states.
         if (rb.linearVelocityY < 0f)
             rb.gravityScale = baseGrav * fallMultiplier;
         else if (rb.linearVelocityY > 0f && !isJumping)
@@ -168,6 +174,10 @@ public class PlayerMovement : MonoBehaviour
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
+    /// <summary>
+    /// Handling player death.
+    /// Handling game over ui and death related effects.
+    /// </summary>
     void Die()
     {
         smoothShake.StartShake(diePreset);
@@ -202,6 +212,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Stomp is initiated if we encounter a stomp collider on an enemy while falling.
         if(collision.CompareTag("Bullet"))
             return;
         FactionMember factionMember = collision.GetComponentInParent<FactionMember>();

@@ -17,6 +17,8 @@ public class PlayerStats : MonoBehaviour
         health.UpdateInvincibility(maxInvincibility);
     }
 
+
+    //Different methods to set different player stats, and updating them in their respective scripts
     public void SetMaxHealth(float value)
     {
         maxHealth = health.MaxHealth + value;

@@ -9,6 +9,7 @@ public class FastEnemy : Enemy
 
     private void Awake()
     {
+        // Initialize variables
         player = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
         healthScript = GetComponent<Health>();
@@ -23,6 +24,7 @@ public class FastEnemy : Enemy
     }
     void FollowPlayer()
     {
+        //Calculating dirn towards player and moving towards them with some randomness
         Vector2 dirn = player.transform.position - this.transform.position;
         dirn.Normalize();
         rb.linearVelocity = new Vector2(dirn.x * speed + Random.Range(-0.5f, 0.5f), rb.linearVelocity.y);
@@ -38,6 +40,7 @@ public class FastEnemy : Enemy
             {
                 playerHealth.TakeDamage(contactDamage);
             }
+            //Apply some knockback
             Vector2 knockbackDirn = collision.gameObject.transform.position - this.transform.position;
             knockbackDirn.Normalize();
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(knockbackDirn * knockbackForce, ForceMode2D.Impulse);

@@ -51,6 +51,7 @@ public class WaveManager : MonoBehaviour
 
     void Update()
     {
+        //Starting the waves if all enemies dead and no more enemies to spawn
         if (enemiesRemaining <= 0 && enemiesToSpawn <= 0 && !isSpawning && gameStarted)
         {
             Debug.Log($"Wave {waveNumber + 1} Starting");
@@ -72,6 +73,7 @@ public class WaveManager : MonoBehaviour
 
     int ChooseEnemyIndex()
     {
+        //Uh go look at some tutorial for accumulated weights and probability I am kinda clueless here too
         double r = rand.NextDouble() * accumulatedWeight;
         for (int i = 0; i < enemy.Count; i++)
         {
@@ -85,6 +87,7 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator SpawnEnemy(GameObject enemyPrefab)
     {
+        //Get spawn play animation boom we have enemy
         int spawnLocationIndex = UnityEngine.Random.Range(0, spawnPoints.Length);
         if (enemyPrefab == null || spawnPoints == null || spawnPoints.Length == 0) yield break;
         Transform spawnPoint = spawnPoints[spawnLocationIndex];
@@ -92,18 +95,16 @@ public class WaveManager : MonoBehaviour
         yield return new WaitForSeconds(1.7f);
         GameObject go = Instantiate(enemyPrefab, spawnPoint.position, spawnPoint.rotation);
 
-        // Apply difficulty-based adjustments to the spawned instance (not the prefab)
+        // Apply difficulty-based adjustments to the spawned instance (not the prefab that shi broke the game)
         var enemyComp = go.GetComponent<Enemy>();
         if (enemyComp != null)
         {
-            // Set a sensible base multiplier of 1 and apply difficulty scaling
             enemyComp.damageMultiplier = 1f + difficulty * damageMult;
         }
 
         var weaponHandlerComp = go.GetComponent<EnemyWeaponHandler>();
         if (weaponHandlerComp != null)
         {
-            // UpdateDamage uses a cached base damage so this will set the instance weapon damage correctly
             weaponHandlerComp.UpdateDamage();
         }
 
@@ -128,6 +129,7 @@ public class WaveManager : MonoBehaviour
 
     IEnumerator StartNextWave()
     {
+        //Start next wave update wave stuff and difficulty and spawn shop or smthg
         isSpawning = true;
         CalculateWeight();
         yield return new WaitForSeconds(1f);
@@ -152,6 +154,7 @@ public class WaveManager : MonoBehaviour
         isSpawning = false;
     }
 
+    //Logic for enemy selection and difficulty scaling
     void CalculateWeight()
     {
         accumulatedWeight = 0f;
@@ -177,6 +180,7 @@ public class WaveManager : MonoBehaviour
         Debug.Log($"NotifyDeath called. enemiesRemaining={enemiesRemaining}", this);
     }
 
+    //Some UI and other related functions
     public IEnumerator OpenShop()
     {
         if (shopPanel != null)

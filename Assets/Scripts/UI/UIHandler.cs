@@ -35,6 +35,7 @@ public class UIHandler : MonoBehaviour
     private WaveManager waveManager;
     void Awake()
     {
+        //Initialize a bunch of stuff and subscribing to events
         if(obstacles != null)
             obstacles.SetActive(false);
         moneyManager = FindAnyObjectByType<MoneyManager>();
@@ -63,6 +64,7 @@ public class UIHandler : MonoBehaviour
 
     void Update()
     {
+        //Check if health has changed and update the UI
         if (!Mathf.Approximately(currentHealth, targetHealth))
         {    
             currentHealth = Mathf.Max(0, Mathf.MoveTowards(currentHealth, targetHealth, smoothSpeed * Time.deltaTime));
@@ -71,10 +73,12 @@ public class UIHandler : MonoBehaviour
             healthBar.sizeDelta = new Vector2(newWidth, height);
             healthText.SetText($"{Mathf.CeilToInt(currentHealth):0}/{maxHealth:0}");
         }
+        //Pause :P
         if(Input.GetKeyDown(KeyCode.Escape))
             Pause();
     }
 
+    //Methods to Update and Set stuff in the UI through other scripts
     void SetHealth()
     {
         targetHealth = playerHealth.CurrentHealth;
@@ -105,7 +109,8 @@ public class UIHandler : MonoBehaviour
             playerHealth.OnMaxHealthChanged -= UpdateHealthBar;
         }
     }
-
+    
+    //Starting, Pausing and whole lotta other stuff
     void Pause()
     {
         if(startScreen.activeSelf || gameOverScreen.activeSelf)

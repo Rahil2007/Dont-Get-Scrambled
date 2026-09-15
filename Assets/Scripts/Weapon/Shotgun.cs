@@ -27,6 +27,7 @@ public class Shotgun : Weapon
     {
         if (fireCooldown <= 0f) { 
             soundSource.PlaySound("Shoot");
+            //Creating a burst of pellets
             for (int i = 0; i < noOfPellets; i++)
             {
                 //For uniform spread, we can use following formula.

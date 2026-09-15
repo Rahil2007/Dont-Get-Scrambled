@@ -23,6 +23,8 @@ public class WeaponHandler : MonoBehaviour
         else if(Input.GetButton("Fire1") && weapons[currentWeaponIndex].holdFire)
             weapons[currentWeaponIndex].Fire(this.GetComponent<FactionMember>().Faction);
 
+
+        //Weapon switching logic
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             foreach(var weapon in weapons)
@@ -45,12 +47,14 @@ public class WeaponHandler : MonoBehaviour
             currentWeaponIndex = 2;
         }
 
+        //Aiming logic
         screenPos = Input.mousePosition;
         worldPos = Camera.main.ScreenToWorldPoint(screenPos);
         Vector2 dirn = worldPos - (Vector2)weapons[currentWeaponIndex].transform.position;
         weapons[currentWeaponIndex].GetComponent<Transform>().rotation = Quaternion.Euler(0,0, Mathf.Atan2(dirn.y, dirn.x) * Mathf.Rad2Deg);
     }
 
+    //Add, remove and upgrading weapons
     public void AddWeapon(Weapon weapon)
     {
         weapons.Add(weapon);

@@ -31,7 +31,9 @@ public class UpgradeSystem : MonoBehaviour
             weaponHandler = player.GetComponent<WeaponHandler>();
         }
         
-    }  
+    }
+
+    //Handling upgrades and purchases
     public void UpgradeHealth(int cost)
     {
         if (playerStats != null && moneyManager.Money >= cost * costMultiplier[0])
@@ -83,12 +85,14 @@ public class UpgradeSystem : MonoBehaviour
     public void PurchaseShotGun(int cost)
     {
         if (weaponHandler == null || moneyManager == null) return;
-
+        //Checking if the weapon exists and player has enough money
         if (!weaponHandler.weapons.Exists(w => w is Shotgun) && moneyManager.Money >= cost)
         {
             moneyManager.SpendMoney(cost);
+            //Updating UI
             if (shotgunSoldImg != null) shotgunSoldImg.SetActive(true);
             if (shotgunButton != null) shotgunButton.interactable = false;
+            //Giving the player the shotgun and adding it to their inventory
             if (Shotgun != null && weaponInventory != null)
             {
                 GameObject shotgun = Instantiate(Shotgun.gameObject, weaponInventory.transform);
@@ -102,12 +106,14 @@ public class UpgradeSystem : MonoBehaviour
     public void PurchaseAssaultRifle(int cost)
     {
         if (weaponHandler == null || moneyManager == null) return;
-
+        //Checking if the weapon exists and player has enough money
         if (!weaponHandler.weapons.Exists(w => w is AssaultRifle) && moneyManager.Money >= cost)
         {
             moneyManager.SpendMoney(cost);
+            //Updating UI
             if (assaultRifleSoldImg != null) assaultRifleSoldImg.SetActive(true);
             if (assaultRifleButton != null) assaultRifleButton.interactable = false;
+            //Giving the player the assault rifle and adding it to their inventory
             if (AssaultRifle != null && weaponInventory != null)
             {
                 GameObject assaultRifle = Instantiate(AssaultRifle.gameObject, weaponInventory.transform);

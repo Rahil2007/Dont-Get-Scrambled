@@ -8,6 +8,6 @@ public abstract class Enemy : MonoBehaviour
     public float knockbackForce = 5f;
     public int moneyDrop = 10;
     public float damageMultiplier = 1f;
-    // Track death to avoid double-calling Die / NotifyDeath
+    // Track death to avoid double-calling Die in wave manager
     [HideInInspector] public bool isDead = false;
 }

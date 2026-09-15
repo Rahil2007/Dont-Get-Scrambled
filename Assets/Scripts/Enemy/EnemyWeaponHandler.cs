@@ -15,6 +15,7 @@ public class EnemyWeaponHandler : MonoBehaviour
 
     void Update()
     {
+        //Aimbot go brrrrr
         if (weapon != null && player != null)
         {
             Vector2 dirn = player.transform.position - weapon.transform.position;

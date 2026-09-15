@@ -20,7 +20,7 @@ public class MoneyManager : MonoBehaviour
         uiHandler.UpdateMoneyText();
     }
 
-    //Bool helps tells Upgrade system if purchase is successful or not
+    //Bool helps tells Upgrade system if purchase is successful or not/ currently not needed but could be useful in the future
     public bool SpendMoney(int amount)
     {
         if (money >= amount)

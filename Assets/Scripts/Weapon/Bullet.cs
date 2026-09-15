@@ -22,9 +22,9 @@ public class Bullet : MonoBehaviour
         bulletFaction = GetComponent<FactionMember>();
     }
 
-
     void Update()
     {
+        //Moving bullet at uniform speed
         rb.linearVelocity = transform.right * speed;
         lifeTimer -= Time.deltaTime;
         if (lifeTimer <= 0f)
@@ -33,6 +33,7 @@ public class Bullet : MonoBehaviour
         }
     }
 
+    //Assigning stuff to bullet ig
     public void SetFaction(Faction faction)
     {
         myFaction = faction; 
@@ -56,6 +57,7 @@ public class Bullet : MonoBehaviour
         if (hitInfo != null && hitInfo.Faction != myFaction && !collision.CompareTag("Bullet"))
         {
             // Add Hit Effect + Enemy Damage Logic Here
+            //Getting angle at which bullet is hitting an object and placing hit affect at that angle
             Quaternion q = hitEffect.transform.rotation;
             q = Quaternion.Euler(Mathf.Atan2(rb.linearVelocity.y, rb.linearVelocity.x) * Mathf.Rad2Deg, -90, 90);
             hitEffect.transform.rotation = q;
@@ -65,9 +67,10 @@ public class Bullet : MonoBehaviour
             Destroy(gameObject);
             hitInfo.GetComponent<Health>().TakeDamage(damage);
         }
-        else if ((collision.CompareTag("Obstacle") && hitInfo == null) || (collision.CompareTag("Bullet") && hitInfo.Faction != myFaction))
+        else if ((collision.CompareTag("Obstacle") && hitInfo == null) || (collision.CompareTag("Bullet") && hitInfo.Faction != myFaction)) //Making sure bullets from same faction don't destroy each other
         {
             // Add Hit Effect Here
+            //Same as above
             Quaternion q = hitEffect.transform.rotation;
             q = Quaternion.Euler(Mathf.Atan2(rb.linearVelocity.y, rb.linearVelocity.x)* Mathf.Rad2Deg, -90, 90);
             hitEffect.transform.rotation = q;
