@@ -69,7 +69,7 @@ public class UIHandler : MonoBehaviour
             float newWidth = (currentHealth / maxHealth) * width;
             newWidth = Mathf.Max(0f, newWidth);
             healthBar.sizeDelta = new Vector2(newWidth, height);
-            healthText.SetText($"{currentHealth:0}/{maxHealth:0}");
+            healthText.SetText($"{Mathf.CeilToInt(currentHealth):0}/{maxHealth:0}");
         }
         if(Input.GetKeyDown(KeyCode.Escape))
             Pause();
